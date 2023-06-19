@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="mate.avif"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Ejercicio3"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Resultados de Examenes"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Entry Placeholder="Escriba su nota" x:Name="notaa" PlaceholderColor="Coral" FontAttributes="Italic"/>
+            <Entry Placeholder="Escriba su nota" x:Name="notab" PlaceholderColor="Coral" FontAttributes="Italic" />
+            <Entry Placeholder="Escriba su nota" x:Name="notac" PlaceholderColor="Coral" FontAttributes="Italic"/>
+            <Entry Placeholder="Escriba su nota" x:Name="notad" PlaceholderColor="Coral" FontAttributes="Italic" />
+            <Entry Placeholder="Escriba su nota" x:Name="notae" PlaceholderColor="Coral" FontAttributes="Italic" />
+            <Entry Placeholder="Nota final" x:Name="notaFi" PlaceholderColor="Red" FontAttributes="Italic" TextColor="Red"/>
+            <Button Text="Evaluar" x:Name="resultado" BackgroundColor="Coral" Clicked="resultado_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
